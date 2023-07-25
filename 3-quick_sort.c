@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
-*swap - the positions of two elements into an list
+*swap - swap the position of two elements
 *@list: list
 *@item1: list element
 *@item2: list element
@@ -21,7 +21,7 @@ void swap(int *list, ssize_t item1, ssize_t item2)
  *@list: list
  *@first: first list element
  *@last: last list element
- *@length: length list
+ *@length: length of the list
  *Return: return the position of the last element sorted
  */
 
@@ -37,7 +37,7 @@ int partition_schema(int *list, ssize_t first, ssize_t last, size_t length)
 			if (list[current] != list[finder])
 			{
 				swap(list, current, finder);
-				array_print(list, length);
+				print_array(list, length);
 			}
 			current++;
 		}
@@ -45,7 +45,7 @@ int partition_schema(int *list, ssize_t first, ssize_t last, size_t length)
 	if (list[current] != list[last])
 	{
 		swap(list, current, last);
-		array_print(list, length);
+		print_array(list, length);
 	}
 	return (current);
 }
