@@ -18,11 +18,11 @@ typedef struct listint_s
 
 void bubble_sort(int *list, size_t length);
 void array_print(const int *list, size_t length);
-void list_print(const listint_t *list);
+void print_list(const listint_t *list);
 listint_t *swap_node(listint_t *node, listint_t **list);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *list, size_t length);
-void quick_sort(int *list, size_t length);
+void quick_sort(int *array, size_t size);
 void shell_sort(int *list, size_t length);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *list, size_t length);
