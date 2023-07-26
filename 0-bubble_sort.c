@@ -20,7 +20,7 @@ void bubble_sort(int *list, size_t length)
 				tmp = list[index];
 				list[index] = list[index + 1];
 				list[index + 1] = tmp;
-				array_print(list, length);
+				print_array(list, length);
 			}
 			index++;
 		}
